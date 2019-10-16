@@ -19,7 +19,7 @@ class Customer
   
   def meals
     customer_meals = []
-    Meals.all.each do |meal|
+    Meal.all.each do |meal|
       if meal.customer.name == @name 
         customer_meals << meal
       end 
