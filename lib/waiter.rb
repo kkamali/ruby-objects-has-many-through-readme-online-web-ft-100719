@@ -26,4 +26,8 @@ class Waiter
     end
     waiter_meals
   end 
+  
+  def best_tipper
+    
+  end 
 end
