@@ -19,6 +19,7 @@ class Customer
   
   def meals
     customer_meals = []
-    Meals.all.each{|meal| meal.customer}
+    Meals.all.each{|meal| if{meal.customer.name == @name} customer_meals << meal }
+    customer_meals
   end 
 end
