@@ -34,6 +34,9 @@ class Waiter
       if biggest_tipper == nil 
         biggest_tip = meal.tip 
         biggest_tipper = meal.customer 
+      elsif meal.tip > biggest_tip
+        biggest_tip = meal.tip 
+        biggest_tipper = meal.customer 
       end 
     end
   end 
