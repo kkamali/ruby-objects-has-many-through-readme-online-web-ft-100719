@@ -30,5 +30,11 @@ class Waiter
   def best_tipper
     biggest_tip = nil 
     biggest_tipper = nil 
+    meals.all.each do |meal|
+      if biggest_tipper == nil 
+        biggest_tip = meal.tip 
+        biggest_tipper = meal.customer 
+      end 
+    end
   end 
 end
