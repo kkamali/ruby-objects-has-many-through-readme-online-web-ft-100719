@@ -3,7 +3,7 @@ class Meal
   
   @@all = []
   
-  def intialize(waiter, customer, total, tip)
+  def intialize(waiter, customer, total, tip=-)
     @waiter = waiter 
     @customer = customer 
     @total = total 
