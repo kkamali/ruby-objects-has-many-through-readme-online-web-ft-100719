@@ -29,5 +29,7 @@ class Customer
   
   def waiters 
     customer_waiters = []
+    customer_meals = meals 
+    
   end 
 end
