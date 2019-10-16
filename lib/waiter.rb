@@ -19,5 +19,11 @@ class Waiter
   
   def meals 
     waiter_meals = []
+    Meal.all.each do |meal|
+      if meal.waiter.name == @name 
+        waiter_meals << meal 
+      end
+    end
+    waiter_meals
   end 
 end
