@@ -29,6 +29,6 @@ class Waiter
   
   def best_tipper
     biggest_tip = nil 
-    biggest_tipper = ""
+    biggest_tipper = nil 
   end 
 end
