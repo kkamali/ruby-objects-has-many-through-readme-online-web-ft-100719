@@ -29,7 +29,6 @@ class Customer
   
   def waiters 
     customer_waiters = []
-    customer_meals = meals 
-    
+    meals.each{|meal| customer_waiters << meal.waiter}
   end 
 end
