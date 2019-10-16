@@ -30,5 +30,6 @@ class Customer
   def waiters 
     customer_waiters = []
     meals.each{|meal| customer_waiters << meal.waiter}
+    customer_waiters
   end 
 end
